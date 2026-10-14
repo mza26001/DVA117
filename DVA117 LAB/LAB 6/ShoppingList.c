@@ -52,7 +52,7 @@ void removeItem(struct ShoppingList *list)
         scanf("%d", &select);
     }while(select <= 0 || select > list->length);
 
-    for(int i = select - 1; i < list->length; i++)
+    for(int i = select - 1; i < list->length - 1; i++)
     {
         ///Shifts the list one index up
         strcpy(list->itemList[i].productName, list->itemList[i + 1].productName);
